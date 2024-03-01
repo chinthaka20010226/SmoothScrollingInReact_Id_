@@ -1,4 +1,5 @@
 import './App.css';
+import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   const scrollToSection = (id) => {
@@ -10,6 +11,7 @@ function App() {
 
   return (
     <div className="App">
+      <ScrollToTop />
       <div className='navbar'>
         <ul>
           <li onClick={() => scrollToSection('home')} className='link'>Home</li>
